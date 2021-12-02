@@ -1,0 +1,20 @@
+every
+
+tests whether all elements in the array pass the provided function.It returns a boolean value.
+
+const words=['dog','dig','log','bag','wag'];
+
+words.every(word=>{
+	return word.length===3;
+})//true
+
+
+words.every(word=>word[0]==='d');//false
+
+words.every(word=>word[word.length-1]==='g');//true
+
+
+
+some
+
+words.some(word=>word[0]==='d')//true

@@ -1,0 +1,19 @@
+reduce
+
+executes a reducer function on each element of the array,resulting in a single value.
+
+summing an array
+
+[3,5,7,9,11].reduce((accumulator,currentValue)=>accumulator+currentValue);
+
+callback    accumulator currentVAlue return value
+first call      3            5          8
+second call     8            7          15
+third call      15           9          24
+fourth call     24           11         35
+
+
+
+
+
+

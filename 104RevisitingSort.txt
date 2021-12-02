@@ -1,0 +1,18 @@
+
+arr.sort(compareFunc(a,b))
+
+if compareFunc(a,b) returns less than 0,sort a before b
+
+if compareFunc(a,b) leave a and b unchanged with respect ot each other
+
+if compareFunc(a,b) returns greater than 0,sort b before a
+
+
+const prices=[400.50,3000,99.99,35.99,12.00,9500];
+const sort1=prices.sort((a,b)=>a-b)//ascending order
+const sort2=prices.sort((a,b)=>b-a)//descending order
+
+
+this mutates
+
+if you just want copy means slice() it before using sort()

@@ -1,0 +1,20 @@
+done:
+
+arrow functions
+string template literals
+let and const
+for of
+for in
+exponenet operator
+String.includes()
+Array.includes()
+Object.values()
+
+
+yet to come:
+rest and spread
+destructuring
+default function params
+object enhancements
+classes
+async functions

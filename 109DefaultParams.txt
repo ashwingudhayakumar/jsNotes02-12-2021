@@ -1,0 +1,33 @@
+function multiply(x,y){
+	return x*y;
+}
+
+multiply(4,5);>>20
+multiply(5);>>NaN
+
+
+
+function multiply(x,y){
+if(typeof y ==='undefined'){
+	y=1;
+}
+	return x*y;
+}
+}
+
+
+now default param comes into pic
+
+funtion multiply(a,b=1){
+	return a*b;
+}
+
+//not going to work as we think
+
+function multiply(x=1,y){
+	return x*y;
+}
+
+multiply(5)>>NaN only
+
+

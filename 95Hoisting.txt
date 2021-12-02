@@ -1,0 +1,62 @@
+var animal='lion';
+console.log(animal);
+>>lion
+
+console.log(animal);     why this weird behaviour means js just hoist like {var animal;console.log(animal);animal ='lion';}//like this it see
+var animal='lion';
+>>undefined
+
+console.log(animal);
+>>error
+
+but in let
+
+
+let shrimp='harlequin shrimp';
+console.log(shrimp);
+>>harlequin shrimp
+
+
+console.log(shrimp);
+let shrimp='harlequin shrimp';
+>>error
+
+
+
+
+howl();
+function howl(){
+	console.log('Awoooo');   why this weird behaviour means js just hoist like function howl(){console.log('Awooo');howl();}
+}
+>>Awooo
+
+
+
+hoot();
+var hoot=function(){
+	console.log('hooo hooo');
+}
+>>error //this is function expression not hoisted 
+
+
+
+console.log(hoot);
+var hoot=function(){
+	console.log('hooo hooo');
+}
+>>undefined
+
+
+
+hoot();
+let hoot=function(){
+	console.log('hooo hooo');
+}
+>>error //this is function expression not hoisted in let also
+
+
+console.log(hoot);
+let hoot=function(){
+	console.log('hooo hooo');
+}
+>>error //this is not like var 

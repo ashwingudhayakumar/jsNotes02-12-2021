@@ -1,0 +1,64 @@
+map
+
+creates a new array with the results of calling a callnack on every element in the array
+
+const texts=['rofl','lol','omg','ttyl'];
+========================
+with return
+
+const caps=texts.map(function(t){
+	return t.toUpperCase();
+})
+
+caps;//['ROFL','LOL','OMG','TTYL'];
+
+==============
+without return
+
+const caps=text.map(function (t){
+	t.toUpperCase();
+})
+
+caps;//[undefined,undefined,undefined,undefined];
+
+====================
+let numbers=[20,21,22,23,24,25,26];
+const isEven=numbers.map(function(num){
+	return {num:num,isEven:(num%2===0)}
+});
+console.log(isEven);
+
+
+=====================
+
+const words=['asap','byob','rsvp','diy'];
+
+//what is the want is A.S.A.P like this
+
+const detail=words.map(function(word){
+	let temp=[];
+	for(let char of word){
+	temp.push(char.toUpperCase());
+	}
+	return temp.join('.');
+})
+
+console.log(detail);
+===========================
+the above replace by 
+const words=['asap','byob','rsvp','diy'];
+
+//what is the want is A.S.A.P like this
+
+const detail=words.map(function(word){
+
+	word.toUpperCase().split().join('.');//split converts string to array //join converts array to string
+	return temp.join('.');
+})
+
+console.log(detail);
+==============================
+
+
+
+

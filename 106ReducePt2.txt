@@ -1,0 +1,20 @@
+write 5! using reduce
+
+[1,2,3,4,5].reduce((accumulator,currentValue)=>accumulator*currentValue);
+
+
+const grades=[1,2,3,4,5,6,7];
+const max=grades.reduce((accumulator,currVal)=>accumulator>currVal?accumulator:currVal);//7
+
+Math.max(3,5);
+5 but this is for values not array so max used into reduce by
+
+
+const max=grades.reduce((accumulator,currVal)=>Math.max(accumulator,currVal));//if min want means just Math.min()
+
+
+//reduce can be also written by  arr.reduce(callback,initialValue);
+
+
+[10,20,30,40,50].reduce((sum,currVal)=>sum+currVal,0);
+                                                   |-----initial value

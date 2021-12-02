@@ -1,0 +1,5 @@
+create a new array with all elements that pass the test implemented by the provided function.
+
+const nums=[9,8,7,6,5,4,3,2,1];
+
+const odds=nums.filter(x=>x%2==1);

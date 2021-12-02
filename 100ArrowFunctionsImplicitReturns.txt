@@ -1,0 +1,48 @@
+const square=n==>{
+	return n*n;
+}
+
+const square=n=>(n*n);
+
+const square=n=>n*n;
+
+const nums=[1,2,3,4,5,6,7,8,9];
+
+without arrow function
+
+const doubles1=nums.map(function(x){
+	return x*2;
+})
+
+with arrow function
+
+const double2=nums.map(x=>{return x*2;});
+
+with arrow function and implicit return
+
+const double3=nums.map(x=>(x*2));
+
+
+parity list with 
+
+function expression :
+
+const parityList1=nums.map(function(x){
+	if(x%2==0)return 'true';
+	return 'false';
+})
+
+
+arrow function:
+
+const parityList2=nums.map(x=>{
+	if(x%2==0)return 'true';
+	return false;
+})
+
+
+arrow function and implicit return:
+
+const parityList3=nums.map(x=>(x%2===0?'true':'false'));//multiple expression is not possible in implicit return
+
+

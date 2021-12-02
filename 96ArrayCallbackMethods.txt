@@ -1,0 +1,25 @@
+arrays come with many bilt in methods that accept callback functions.
+
+now that we have covered callbacks,we can learn these methods!
+
+
+use the new arrow function syntax
+
+
+understand and use these methods:
+
+
+forEach
+
+map
+
+filter
+
+find
+
+reduce
+
+some
+
+every
+

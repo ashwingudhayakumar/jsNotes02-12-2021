@@ -1,0 +1,20 @@
+find
+
+returns the value of the first element in the array that satisfies the provided testing function
+
+
+let movies=[
+  "The fantastic Mr.Fox",
+  'Mr. and Mrs.smith',
+  'Mrs.Doubtfire',
+  'Mr.Deeds'
+];
+
+let movie1=movies.find(movie=>movie.includes('Mrs.'))//Mr. and Mrs.smith;
+
+let movie2=movies.find(movie=>movie.indexOf('Mrs.')!==-1)//Mr. and Mrs.smith;
+
+only one element is stored 
+
+
+
